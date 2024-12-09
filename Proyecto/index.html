@@ -1,0 +1,86 @@
+<html>
+    <head><!--Ësta sección se utiliza para definir metadatos, el título de la página, palabras claves, en laces a otros recursos como javascript o CSSS. -->
+        <title>1ra página</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+   
+    <body><!--Ësta sección es la que muestra todo el contenido la página web, todo lo que el usuario puede ver.-->
+        <header>
+            <div class="logo">
+                <img src="park.jpg" alt="Logo" title="dibujo de un parque" >
+                <h2 class="logo-nombre">El Parque</h2>
+
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#aves" role="navigation">Aves</a></li><!--El atributo role describe el rol de un elemento en los programas que pueden usarlo, como lectores de pantalla o magnificadores -->
+                    <li><a href="#enlaces" role="navigation">Enlaces</a></li>
+                    
+                </ul>
+            </nav>
+        
+        </header>
+        
+      
+        <video controls width="500" >
+        <source src="video1.mp4" type="video/mp4">
+        <track src="subtitles.vtt" kind="subtitles" srclang="es" label="Español" />
+       </video>
+        <h2>Qué es un parque?</h2>
+       <p>Es un área de tierra, generalmente en un estado mayoritariamente natural, para el disfrute del público, con instalaciones para el descanso y la recreación, a menudo propiedad de una ciudad, un estado o una nación, separada y administrada por ellos</p>
+      
+    <div class="imagen1"><!--Los colores que seleccionas para la interfaz de una web afectan a la facilidad con la que los usuarios pueden leerla y entenderla-->
+        <img src="parque.jpg" alt="Foto de Parque junto al lago" title="Foto de Parque junto al lago"  class="imagen1" ><!--El atributo alt es muy importante ya que describe en palabras lo contenido en la imagen, es muy útil para ciegos o cuando la imagen no carga corectamente-->
+        <br><br>
+       <h2>Elementos naturales en un parque:</h2>
+       
+        <ul><!--Ésta lista no ordenada muestra los elementos naturales en un parque-->
+            <li>Arboles</li>
+            <li>Flores</li>
+            <li>Arbustos</li>
+            <li>Mariposas</li>
+            <li>Aves</li>
+            <li>Perros</li>
+
+        </ul>
+        <br><br><br><br><br><br>
+    </div>
+    <div class="imagen2">
+        <h2>Animales frecuentes en un parque:</h2>
+        <audio src="pajaros.mp3" title="Sonidos de Aves" controls></audio><!--el audio inmerso en nuestra página web puede ayudar a dar una mejor experiencia al usuario-->
+        <ol><!--Ésta lista ordenada muestra los animales que frecuantan los parques-->
+            <img src="birds.jpg" alt="Aves en el Parque" title="Aves"  >
+            <li id="aves">Aves:</li>
+              <ol><!--Ésta lista anidada no ordenada muestra algunas de las aves que frecuentan los parques-->
+                <li>Gorriones</li>
+                <li>Palomas</li>
+                <li>Tortolas</li>
+              </ol>
+            <li>Perros</li>
+            <li>Gatos</li>
+            <li>Lagartijas</li>
+            
+        </ol>
+    </div>
+    <br><br><br><br><br><br><br><br>
+    <div class="imagen3">
+        <h2>Enlaces a temas relacionados</h2>
+        <ul id="enlaces">
+            <li><a href="https://chikigranada.com/los-13-mejores-parques-de-granada-para-ir-con-ninos/" aria-label="ir a la página chikigranada.com">Los 13 mejores parques de Granada para ir con niños</a></li><!--El atributo aria-label proporciona la etiqueta de texto para un objeto, como un botón . Cuando un lector de pantalla encuentra el objeto, se lee el texto aria-label para que el usuario sepa de qué se trata.-->
+            <li><a href="https://www.granada.org/inet/warboles.nsf" aria-label="Ir a la página granada.org">Parques y árboles de Granada </a></li>
+            <li><a href="https://www.parqueciencias.com/" aria-label="Ir a la página parqueciencias.com">Parque de las Ciencias de Andalucía</a></li>
+        </ul>
+        <map name="mapa_parque">
+            <area shape="rect" coords="7, 5, 250, 250"  alt="Arboles" title="Arboles en Granada" href="https://agrogojarviveros.com/arboles-en-granada/">
+            <area shape="circle" coords="315, 230, 92" alt="Fuente" title="Fuentes en Granada" href="https://mispaseosporgranada.com/2020/03/22/fuentes/">
+            <area shape="rect" coords="270, 270, 7, 5" alt="Calle" title="Senderismo en Granada" href="https://www.escapadarural.com/blog/rutas-de-senderismo-en-granada/">
+        </map>
+        <img src="garden.jpg" usemap="#mapa_parque" >
+    </div>
+    </body>
+    <footer><!--Ésta sección se utiliza para definir contactos, derecho de autor, o enlaces adicionales...-->
+        <h6> Autor: Carlos Natera</h6>
+
+    </footer>
+</html>
